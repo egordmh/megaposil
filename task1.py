@@ -53,7 +53,7 @@ def main():
         wn, ns, cn, ts, c = map(str, l[x].split(","))
         wn = int(wn)
         c = int(c)
-        tf = sec_to_time(time_to_sec(ts) + c)
+        tf = sec_to_time(time_to_sec(ts) + c*3600)
         rs = "На станции " + ns + " в каюте " + cn + " восстановлено время. Актуальное время: " + tf + "\n"
         print(rs)
         fo.write(rs)
